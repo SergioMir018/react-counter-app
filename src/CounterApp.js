@@ -7,6 +7,9 @@ const CounterApp = ( { value } ) => {
     <>
       <h1>CounterApp</h1>
       <h2> { value } </h2>
+
+      <button id='rest'> -1 </button>
+      <button id='add'> +1 </button>
     </>
   );
 }
