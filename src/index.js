@@ -1,8 +1,9 @@
 import React from "react";
 import  ReactDOM  from "react-dom/client";
+import FirstApp from "./FirstApp";
 
-const salute = <h1> Hello World </h1>;
+import './index.css';
 
 const divRoot = document.querySelector('#root');
 
-ReactDOM.createRoot( divRoot ).render( salute );
+ReactDOM.createRoot( divRoot ).render( <FirstApp /> );
