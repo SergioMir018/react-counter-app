@@ -7,4 +7,4 @@ import './index.css';
 
 const divRoot = document.querySelector('#root');
 
-ReactDOM.createRoot( divRoot ).render( <CounterApp value={ 10 } /> );
+ReactDOM.createRoot( divRoot ).render( <CounterApp /> );

@@ -1,21 +1,31 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 
-const CounterApp = ( { value } ) => {
+const CounterApp = () => {
+
+  const [ counter, setCounter ] = useState( 0 );
+
+  const handleAdd = () => {
+    setCounter( counter + 1 );
+  }
+
+  const handleRest = () => {
+    setCounter( counter - 1 );
+  }
+
+  const handleReset = () => {
+    setCounter( counter * 0 );
+  }
 
   return (
-    <>
-      <h1>CounterApp</h1>
-      <h2> { value } </h2>
+		<>
+			<h1>CounterApp</h1>
+			<h2> { counter } </h2>
 
-      <button id='rest'> -1 </button>
-      <button id='add'> +1 </button>
-    </>
-  );
+			<button id="rest" onClick={ handleRest }> -1 </button>
+			<button id="reset" onClick={ handleReset }> Reset Counter </button>
+			<button id="add" onClick={ handleAdd }> +1	</button>
+		</>
+	);
 }
-
-CounterApp.propTypes = {
-  value: PropTypes.number.isRequired
-};
 
 export default CounterApp;

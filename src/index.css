@@ -29,3 +29,16 @@ html, body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+#reset {
+  border-style:solid;
+  border-radius: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
