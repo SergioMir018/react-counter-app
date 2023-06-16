@@ -6,4 +6,4 @@ import './index.css';
 
 const divRoot = document.querySelector('#root');
 
-ReactDOM.createRoot( divRoot ).render( <FirstApp /> );
+ReactDOM.createRoot( divRoot ).render( <FirstApp salute="Hello I'm Sergio" /> );
